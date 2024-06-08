@@ -1,3 +1,5 @@
+// src/helpers/itemActions/addItem.js
+
 /**
  * Adds a new item to the children array of the specified parent item in the hierarchical list.
  *
@@ -14,15 +16,15 @@ export const addItem = (items, setItems, parent, newItem) => {
    * @returns {Array} - The updated list of items.
    */
   const recursiveAdd = (list) => {
-      return list.map((item) => {
-          if (item === parent) {
-              // Found the parent item, add the new item to its children
-              return { ...item, children: [...item.children, newItem] };
-          } else {
-              // Recursively process the children of the current item
-              return { ...item, children: recursiveAdd(item.children) };
-          }
-      });
+    return list.map((item) => {
+      if (item === parent) {
+        // Found the parent item, add the new item to its children
+        return { ...item, children: [...item.children, newItem] };
+      } else {
+        // Recursively process the children of the current item
+        return { ...item, children: recursiveAdd(item.children) };
+      }
+    });
   };
 
   // Update the state with the new list of items
