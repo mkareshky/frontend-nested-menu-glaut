@@ -1,0 +1,7 @@
+module.exports = {
+    presets: [
+      "@babel/preset-env", // To handle ES6 modules
+      "@babel/preset-react" // To handle JSX
+    ]
+  };
+  

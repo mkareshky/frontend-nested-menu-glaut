@@ -11,4 +11,4 @@ In the project directory, you can run:
 
 To run test
 
-### `npm test`
+### `npx jest`
