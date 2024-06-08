@@ -1,0 +1,22 @@
+/* styles.css */
+
+.nested-list {
+  background-color: #2C2C2C;
+  border-color: rgb(70, 69, 69);
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.tooltip .tooltiptext {
+  padding: 5px;
+  font-size: smaller;
+}
+.tooltip i {
+  margin-left: 20px;
+  font-size: smaller;
+}
