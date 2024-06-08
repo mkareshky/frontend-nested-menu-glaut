@@ -20,7 +20,7 @@ const NestedList = () => {
   const maxDepth = 3; // Maximum depth for nested items
 
   return (
-    <div className='nested-list'>
+    <div data-testid='nested-list' className='nested-list'>
       {/* Button to add a top-level item */}
       <IconButton
         onClick={() => addTopLevelItem(setItems, createNewItem)}
