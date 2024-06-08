@@ -1,6 +1,5 @@
 // src/components/NestedList/NestedList.js
 
-import './NestedList.css'; // Import the CSS file
 import React, { useState } from 'react';
 import { IconButton } from '@mui/material';
 import TagIcon from '@mui/icons-material/Tag';
@@ -10,6 +9,7 @@ import { nesteditems } from '../../helpers/NestedListItems';
 import { addItem } from '../../helpers/itemActions/addItem';
 import { editItem } from '../../helpers/itemActions/editItem';
 import { addTopLevelItem } from '../../helpers/itemActions/addTopLevelItem';
+import './NestedList.css'; // Import the CSS file
 
 /**
  * NestedList component that renders a nested list of items with functionality
